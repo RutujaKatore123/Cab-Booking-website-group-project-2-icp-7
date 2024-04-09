@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./../css/signup.css">
-    <title>login page</title>
+    <title>Signup Page</title>
 </head>
 
 <body>
@@ -17,28 +17,44 @@
 
         <div class="right-login">
             <div class="card-login">
-                <h1>Welcome</h1><h2>Enter your personal details to use all of site features.....</h2>
+                <h1>Welcome</h1>
+                <h2>Enter your personal details to use all of site features...</h2>
                 <div class="textfield">
-                    <label for="Enter Name">Enter Name.</label>
-                    <input type="text" name="Enter Name" placeholder=" Name">
+                    <label for="name">Enter Name</label>
+                    <input type="text" id="name" name="name" placeholder="Username">
                 </div>
                 <div class="textfield">
-                    <label for="Enter Email">Enter Email I'd.</label>
-                    <input type="text" name="Enter Email" placeholder="Email I'd">
+                    <label for="email">Enter Email</label>
+                    <input type="text" id="email" name="email" placeholder="Email">
                 </div>
                 <div class="textfield">
-                    <label for="Enter Password">Create Password</label>
-                    <input type="password" name="Enter Password" placeholder="Create your Password">
+                    <label for="password">Create Password</label>
+                    <input type="password" id="password" name="password" placeholder="Create your Password">
                 </div>
-                <button class="btn-login">Sign UP</button>
+                <button class="btn-login" onclick="signup()">Sign Up</button>
                 <div class="btn-plus">
-                    <a class="btn-cadastre-se"> Join for Free <a class="for" href="./../pages/login.html">Login</span></a>
+                    <a class="btn-cadastre-se"> Join for Free <span class="for"><a href="./../pages/login.html">Login</a></span></a>
                 </div>
             </div>
         </div>
     </div>
-    
-</body>
 
+    <script>
+        function signup() {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+
+            if (name.trim() === '' || email.trim() === '' || password.trim() === '') {
+                alert('Please fill in all fields.');
+            } else {
+                // Perform signup action here
+                alert('Sign up successful!');
+                // You can redirect the user to another page or perform any other action here
+            }
+        }
+    </script>
+
+</body>
 
 </html>
