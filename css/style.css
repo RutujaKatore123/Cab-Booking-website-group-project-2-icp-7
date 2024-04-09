@@ -1,3 +1,8 @@
+.nav-text{
+    text-align: end;
+}
+
+
 .head{
     display: flex;
     justify-content: space-between;
