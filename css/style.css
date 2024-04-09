@@ -1,14 +1,15 @@
 .nav-text{
     text-align: end;
 }
-
+.container-fluid{
+    height: 70px;
+}
 
 .head{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 30px 0;
-
 }
 .head-right{
     text-align: center;
@@ -44,4 +45,20 @@
 .card-head{
     font-weight: bold;
     margin-top: 10px;
+}
+.section{
+    margin-top: 100px;
+}
+.section-content{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+    font-size: 20px;
+}
+.ph-img{
+    height: 450px;
+    margin-right: 300px;
+}
+.steps-icon{
+    height: 40px;
 }
