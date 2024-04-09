@@ -34,6 +34,10 @@
     padding-bottom: 70px;
     
 }
+.car-img{
+    height: 200px;
+    width: 300px;
+}
 .card{
     box-shadow: 0 0 10px rgba(0, 0,0,1.2);
     border-radius: 10px;
@@ -41,6 +45,8 @@
     transform: scale(1);
     background-color: white;
     border: none;
+    height: 350px;
+    width: 300px;
 }
 .card:hover{
     transition: 1s;
@@ -51,6 +57,7 @@
     color: crimson;
     font-weight: bold;
     text-align: center;
+    align-items: flex-start
 }
 .top-heading-1{
     text-align: center;
@@ -60,15 +67,18 @@
 .info-container{
     display: flex;
     direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-evenly;
     padding: 10px 200px;
+    align-items: center;
 }
 .info-img{
     height: 70px;
 }
 .info-card{
     text-align: center;
+    width: 300px;
+    margin: 10px;
     
 
 }
@@ -85,4 +95,17 @@
     color: gray;
     font-family: sans-serif;
     margin-top: -10px
+}
+.info-card-1{
+    text-align: center;
+    width: 300px;
+    margin: 10px;
+    padding-left: 110px;
+    background-color:  #f8d9c3;
+    align-items: flex-start;
+    padding: 50px ;
+    border-radius: 50px;
+}
+.info-img-1{
+    height: 100px;
 }
