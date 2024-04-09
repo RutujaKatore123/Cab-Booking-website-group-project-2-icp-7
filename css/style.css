@@ -12,8 +12,13 @@
     width: 500px;
     border-radius: 0 20px 20px 20px;
 }
+.head-left{
+    display: block;
+    margin: 0 auto;
+}
 .head-img{
     height: 300px;
+    border-radius: 20px;
 }
 .container{
     display: flex;
