@@ -1,3 +1,3 @@
-function carChange(){
-    carImg=document.getElementById('car-img');
+function carChange(car){
+    const carImg=document.getElementById('car-img');
 }
