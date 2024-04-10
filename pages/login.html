@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./../css/login.css">
-    <title>login page</title>
+    <title>Login Page</title>
 </head>
 
 <body>
@@ -17,22 +17,38 @@
 
         <div class="right-login">
             <div class="card-login">
-                <h1>Welcome</h1><h2>Please login to continue......</h2>
+                <h1>Welcome</h1>
+                <h2>Please login to continue...</h2>
                 <div class="textfield">
-                    <label for="Enter Email">Enter Email</label>
-                    <input type="text" name="Enter Email" placeholder="Email">
+                    <label for="email">Enter Email</label>
+                    <input type="text" id="email" name="email" placeholder="Email">
                 </div>
                 <div class="textfield">
-                    <label for="Enter Password">Enter Password</label>
-                    <input type="password" name="Enter Password" placeholder="Enter your Password">
+                    <label for="password">Enter Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your Password">
                 </div>
-                <button class="btn-login">login</button>
+                <button class="btn-login" onclick="login()">Login</button>
                 <div class="btn-plus">
-                    <a class="btn-cadastre-se">Not a member?  <a class="for" href="./../pages/signup.html">Sign Up</span></a>
+                    <a class="btn-cadastre-se">Not a member? <span class="for"><a href="./../pages/signup.html">Sign Up</a></span></a>
                 </div>
             </div>
         </div>
     </div>
+
+    <script>
+        function login() {
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+
+            if (email.trim() === '' || password.trim() === '') {
+                alert('Please enter both email and password.');
+            } else {
+                // Perform login action here
+                alert('Login successful!');
+                // You can redirect the user to another page or perform any other action here
+            }
+        }
+    </script>
 
 </body>
 
