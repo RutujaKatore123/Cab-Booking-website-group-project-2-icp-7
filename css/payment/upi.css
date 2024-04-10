@@ -8,10 +8,18 @@
     border: 2px solid black;
 }
 
+.veri{
+    margin-top: 14px;
+}
+
 .logo{
     width: 500px;
 }
 
+.img{
+    margin-top: 24px;
+
+}
 input{
     border-radius: 10px;
     margin-top: 10px;
