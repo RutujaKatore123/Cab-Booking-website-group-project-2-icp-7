@@ -6,6 +6,25 @@
     <title>Feedback Page</title>
 </head>
 <body>
-    
+    <div class="container">
+
+        <h2 class="text-center my-3 fw-bold">Feedback Form</h2>
+        <form id="feedbackForm">
+          <div class="form-group fw-bold">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control " id="name" required>
+          </div>
+          <div class="form-group fw-bold">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+         
+          <div class="form-group fw-bold">
+            <label for="comments">Comments:</label>
+            <textarea class="form-control" id="comments" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn d-block mx-auto my-2 ">Submit Feedback</button>
+        </form>
+      </div>
 </body>
 </html>
