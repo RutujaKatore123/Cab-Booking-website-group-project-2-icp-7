@@ -1,0 +1,53 @@
+.first {
+    height: 600px;
+    margin-top: 5%;
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px 5px rgb(175, 162, 162);
+    border: 2px solid black;
+}
+
+.veri{
+    margin-top: 14px;
+}
+
+.logo{
+    width: 500px;
+}
+
+.img{
+    margin-top: 24px;
+
+}
+input{
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.otp{
+    background-color: rgb(237, 91, 91);
+    color: white;
+}
+
+.next{
+    background-color: rgb(2, 194, 2);
+    color: white;
+}
+
+@media screen and (max-width:923px) and (min-width:768px) {
+    .logo {
+        margin-top: 100px;
+        height: 400px;
+    }
+
+}
+
+@media screen and (max-width:767px){
+    p{
+        margin-right: 65%;
+    }
+    .logo{
+        display: none;
+    }
+}
