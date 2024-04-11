@@ -14,4 +14,45 @@ body {
      padding: 20px 40px;
     box-shadow: 4px 8px 10px 1px black;
   }
-  
+  .container:hover{
+    transform: translate(-6px);
+    
+  box-shadow: 4px 8px 10px 1px black;
+    
+  }
+  .feedback-head {
+    font-size: 45px;
+  }
+  .form-control{
+    border-radius: 10px;
+    width:100%;
+    border: none;
+    background: #e8e7ed;
+  color: #171f1fde;
+  font-size: 12pt;
+  box-shadow: 0px 10px 30px #00000056;
+  outline: none;
+  box-sizing: border-box;
+    
+    
+    
+  }
+  .btn{
+    border-radius: 20px;
+    padding:5px 15px;
+    border: none;
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(255, 209, 67, 1) 0%, rgba(255, 145, 83, 1) 90%);
+    cursor: pointer;
+
+  }
+  .feedback-img{
+    width:70%;
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+  }
+  .container-main{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+  }
