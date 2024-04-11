@@ -26,6 +26,29 @@
     height: 300px;
     border-radius: 20px;
 }
+.car-btn{
+    text-align: center;
+}
+.btn-car{
+    border: 1px solid #ffc107;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    width: 100px;
+    height: 40px;
+    margin: 10px 50px;
+    margin-top: 50px;
+}
+.btn-car:hover{
+    background-color: #ffc107;
+    color: white;
+    transition: 0.5s;
+}
+.car-img{
+    display: block;
+    margin: 30px auto;
+    height: 300px;
+}
 .container{
     display: flex;
     justify-content: space-between;
