@@ -56,3 +56,16 @@ body {
     margin: auto;
     margin-top: 20px;
   }
+  @media screen and (max-width: 480px){
+    .container{
+      width: 90%;
+      padding: 10px 20px;
+    }
+    .feedback-img{
+      width:90%;
+    }
+    .feedback-head {
+    font-size: 35px;
+   margin-right: 10px;
+  }
+  }
