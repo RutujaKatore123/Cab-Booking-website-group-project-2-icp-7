@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../css/signup.css">
+    <title>Signup Page</title>
+</head>
+
+<body>
+    <div class="main-login">
+        <div class="left-login">
+            <h1>Cab Booking<br>Sanitized & Safe Cars</h1>
+            <img src="./../images/Sign up-bro.png" class="left-login-image" alt="Imagem animada">
+        </div>
+
+        <div class="right-login">
+            <div class="card-login">
+                <h1>Welcome</h1>
+                <h2>Enter your personal details to use all of site features...</h2>
+                <div class="textfield">
+                    <label for="name">Enter Name</label>
+                    <input type="text" id="name" name="name" placeholder="Username">
+                </div>
+                <div class="textfield">
+                    <label for="email">Enter Email</label>
+                    <input type="text" id="email" name="email" placeholder="Email">
+                </div>
+                <div class="textfield">
+                    <label for="password">Create Password</label>
+                    <input type="password" id="password" name="password" placeholder="Create your Password" oninput="checkPasswordStrength()">
+                    <div id="password-strength"></div>
+                </div>
+                <button class="btn-login" onclick="signup()">Sign Up</button>
+                <div class="btn-plus">
+                    <a class="btn-cadastre-se"> Join for Free <span class="for"><a href="./../pages/login.html">Login</a></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function signup() {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+
+            if (name.trim() === '' || email.trim() === '' || password.trim() === '') {
+                alert('Please fill in all fields.');
+            } else {
+                // Perform signup action here
+                alert('Sign up successful!');
+                // You can redirect the user to another page or perform any other action here
+            }
+        }
+
+        function checkPasswordStrength() {
+            var password = document.getElementById('password').value;
+            var strengthMeter = document.getElementById('password-strength');
+            var strength = 0;
+
+            // Minimum length check
+            if (password.length >= 8) {
+                strength += 1;
+            }
+
+            // Contains lowercase and uppercase letters
+            if (password.match(/[a-z]/) && password.match(/[A-Z]/)) {
+                strength += 1;
+            }
+
+            // Contains at least one number
+            if (password.match(/\d+/)) {
+                strength += 1;
+            }
+
+            // Contains at least one special character
+            if (password.match(/[$@#&!]/)) {
+                strength += 1;
+            }
+
+            // Update strength meter
+            switch (strength) {
+                case 0:
+                    strengthMeter.innerHTML = '';
+                    break;
+                case 1:
+                    strengthMeter.innerHTML = 'Weak';
+                    strengthMeter.style.color = 'red';
+                    break;
+                case 2:
+                    strengthMeter.innerHTML = 'Moderate';
+                    strengthMeter.style.color = 'orange';
+                    break;
+                case 3:
+                    strengthMeter.innerHTML = 'Strong';
+                    strengthMeter.style.color = 'green';
+                    break;
+                case 4:
+                    strengthMeter.innerHTML = 'Very Strong';
+                    strengthMeter.style.color = 'darkgreen';
+                    break;
+            }
+        }
+    </script>
+
+</body>
+
+</html>
