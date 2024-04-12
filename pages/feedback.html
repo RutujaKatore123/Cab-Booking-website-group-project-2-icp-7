@@ -56,7 +56,14 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script>
+     document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+      event.preventDefault();
     
+      var name = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+      var rating = document.getElementById('rating').value;
+      var comments = document.getElementById('comments').value;
+    });
   </script>
 </body>
 </html>
