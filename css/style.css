@@ -4,6 +4,10 @@
 .container-fluid{
     height: 70px;
 }
+.header-container{
+    justify-content: space-around;
+    
+}
 
 .head{
     display: flex;
