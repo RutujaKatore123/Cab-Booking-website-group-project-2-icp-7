@@ -29,7 +29,8 @@
                 </div>
                 <div class="textfield">
                     <label for="password">Create Password</label>
-                    <input type="password" id="password" name="password" placeholder="Create your Password">
+                    <input type="password" id="password" name="password" placeholder="Create your Password" oninput="checkPasswordStrength()">
+                    <div id="password-strength"></div>
                 </div>
                 <button class="btn-login" onclick="signup()">Sign Up</button>
                 <div class="btn-plus">
@@ -51,6 +52,55 @@
                 // Perform signup action here
                 alert('Sign up successful!');
                 // You can redirect the user to another page or perform any other action here
+            }
+        }
+
+        function checkPasswordStrength() {
+            var password = document.getElementById('password').value;
+            var strengthMeter = document.getElementById('password-strength');
+            var strength = 0;
+
+            // Minimum length check
+            if (password.length >= 8) {
+                strength += 1;
+            }
+
+            // Contains lowercase and uppercase letters
+            if (password.match(/[a-z]/) && password.match(/[A-Z]/)) {
+                strength += 1;
+            }
+
+            // Contains at least one number
+            if (password.match(/\d+/)) {
+                strength += 1;
+            }
+
+            // Contains at least one special character
+            if (password.match(/[$@#&!]/)) {
+                strength += 1;
+            }
+
+            // Update strength meter
+            switch (strength) {
+                case 0:
+                    strengthMeter.innerHTML = '';
+                    break;
+                case 1:
+                    strengthMeter.innerHTML = 'Weak';
+                    strengthMeter.style.color = 'red';
+                    break;
+                case 2:
+                    strengthMeter.innerHTML = 'Moderate';
+                    strengthMeter.style.color = 'orange';
+                    break;
+                case 3:
+                    strengthMeter.innerHTML = 'Strong';
+                    strengthMeter.style.color = 'green';
+                    break;
+                case 4:
+                    strengthMeter.innerHTML = 'Very Strong';
+                    strengthMeter.style.color = 'darkgreen';
+                    break;
             }
         }
     </script>
