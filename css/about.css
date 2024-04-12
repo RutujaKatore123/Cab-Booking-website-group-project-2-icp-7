@@ -1,5 +1,6 @@
 body{
     background-color: #000000;
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(255, 209, 67, 1) 0%, rgba(255, 145, 83, 1) 90%);
 }
 .top-heading{
     text-align: center;
@@ -18,7 +19,7 @@ body{
 .download-step{
     font-size:  larger;
     padding-top: 25px;
-    color: #ffffff;
+    color: black;
 
 }
 
@@ -30,16 +31,15 @@ body{
 .vehicle-container{
     display: flex;
     direction: row;
-    align-items: center;
     justify-content: space-evenly;
     padding-top: 70px;
-    background-color: #fca311;
     padding-bottom: 70px;
     
 }
 .car-img{
     height: 200px;
-    width: 300px;
+    width: 280px;
+    padding: 20px;
 }
 .card{
     box-shadow: 0 0 10px rgba(0, 0,0,1.2);
@@ -50,6 +50,9 @@ body{
     border: none;
     height: 350px;
     width: 300px;
+    display: flex;
+    align-items: flex-start;
+    align-items: stretch;
 }
 .card:hover{
     transition: 1s;
@@ -60,7 +63,8 @@ body{
     color: #000000;
     font-weight: bold;
     text-align: center;
-    align-items: flex-start
+    align-items: flex-start;
+
 }
 .top-heading-1{
     text-align: center;
@@ -113,4 +117,35 @@ body{
 }
 .info-img-1{
     height: 100px;
+}
+@media only screen and (max-width: 768px) {
+    .top-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vehicle-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 90%;
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+
+    .card {
+        width: 80%;
+        transform: scale(1);
+        margin-top: 20px;
+    }
+    .car:hover{
+        transform: scale(1.001);
+
+    }
+
+    .info-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
 }
