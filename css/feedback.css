@@ -2,9 +2,11 @@ body {
     background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(255, 209, 67, 1) 0%, rgba(255, 145, 83, 1) 90%);
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
   }
   .container-feedback{
     padding-bottom: 30px;
+    padding-top: 80px;
   }
   .container {
     margin-top: 80px;
