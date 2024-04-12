@@ -5,19 +5,24 @@
     background-color: white;
     border-radius: 15px;
     box-shadow: 0px 0px 5px 5px rgb(175, 162, 162);
+    border: 2px solid black;
 }
 
-p .img1 {
-    height: 240px;
+.otp{
+    margin-top: 14px;
+}
+.logo{
+    width: 500px;
 }
 
-p .img2 {
-    height: 90px;
+.next{
+    background-color: rgb(2, 178, 2);
+    color: white;
 }
 
-p .img3 {
-    margin-top: 20%;
-    height: 90px;
+p input{
+    margin-top: 14px;
+    border-radius: 10px;
 }
 
 @media screen and (max-width:923px) and (min-width:768px) {
