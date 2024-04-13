@@ -10,6 +10,7 @@
 {
  font-weight: bolder;
  text-align: center;
+ padding-top: 80px;
 }
 
 .moving-img-container
@@ -32,13 +33,11 @@
     width: 80%;
     border: 1px double rgba(154, 35, 138, 0.833);
 }
-@media screen and (max-width:768px)
-  {
-    .moving-img
+/* @media screen and (max-width:768px)
   {
    
-  }
-}
+  
+} */
 .carousel-inner{
   height: 400px;
   width: 1300px;
@@ -63,10 +62,10 @@
 
 
 
-.moving-img:hover
+/* .moving-img:hover
 {
     
-}
+} */
 .img-text
 {
     color:rgb(255, 251, 251);
