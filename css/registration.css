@@ -2,7 +2,7 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url(./../images/cab.png);
+    background-image: url(./../images/cab\ \(2\).png);
     background-repeat: no-repeat;
     background-size: contain;
 
@@ -70,4 +70,4 @@ body {
     margin: 30px auto 0 auto;
     padding: 10px 40px;
  }
- git
+ 
