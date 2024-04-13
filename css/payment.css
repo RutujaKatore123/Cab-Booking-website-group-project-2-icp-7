@@ -36,3 +36,51 @@ p .img3 {
         display: none;
     }
 }
+
+
+/*<!--footercode---->*/
+.footer{
+    background-color: black;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding-bottom: 100px;
+
+}
+.main-footer{
+    align-items: center;
+    justify-content: space-between
+}
+
+.soci-logo{
+    height: 40px;
+    padding-right: 20px;
+}
+.mid-footer{
+    display: grid;
+    align-items: center;
+    padding-top: 80px;
+}
+.useful-links{
+    display: flex;
+    justify-content:space-between ;
+    color: #e5e5e5;
+    text-decoration: none;
+}
+.page-links{
+    color: #e5e5e5;
+    font-size: large;
+    text-align: center ;
+}
+.copy-right{
+    color: white;
+}
+.right-footer{
+    color: white;
+}
+.msg-heading{
+    padding-top: 120px;
+    padding-bottom: 30px;
+}
