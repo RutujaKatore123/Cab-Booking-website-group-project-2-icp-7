@@ -165,5 +165,8 @@ body{
         height: 200px;
         margin-top: 20px;
     }
+    .ph-img{
+        display: block;
+    }
 }
   
