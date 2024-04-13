@@ -39,7 +39,7 @@
   <div class="head">
     <div class="head-text">
       <form  class="row">
-        <div class="slider_form bg-dark mx-auto my-4 p-3 col-md-3"  >
+        <div class="slider_form bg-dark mx-auto my-2 p-3 col-md-3"  >
         
             <h2 class="text-white" data-sider-select-id="9c41c436-bd1d-436c-9fd4-c1586bf452f7"> BOOK A CAB NOW</h2>
             <h4 class="text-light my-1" style="text-align:left;">Trip Type </h4>
@@ -92,7 +92,7 @@
                     <input id="phone" name="phone" class="form-control register_form m-1 " type="number" placeholder="Your Phone Number" maxlegth="10" title="Error Message" pattern="[1-9]{1}[0-9]{9}" required="" fdprocessedid="4rm7gm">
                     <input id="email" name="email" class="form-control register_form m-1 " type="email" placeholder="Your Email ID" title="Error Message" required="" fdprocessedid="iey0h">
                     <!---<input id="email" name="email" class="form-control register_form " type="email" placeholder="Your Email id" title="Error Message" required>-->
-                    <button class="btnn btn btn-warning"> Book Know</button>
+                    <button class="btnn btn btn-warning" onclick="validate()"> Book Know</button>
             
         </div>
     </form>
@@ -105,10 +105,10 @@
     </div>
   </div>
 
-    <div class="section ">
+    <div class="section">
         <h1 class="text-center">Get a ride at your Fingertips!</h1>
-        <p class="text-center">Select destination, confirm booking, connect with driver,enjoy the trip</p>
-        <div class="section-content">
+        <p class="text-center">Select destination, confirm booking, connect with driver, enjoy the trip</p>
+        <div class="section-content"> 
             <img src="./images/cab-booking.png" class="ph-img">
             <div class="section-content-r">
                 <h2>How it Works</h2>
@@ -116,11 +116,14 @@
                     <img src="./icons/register.png" class="steps-icon">
                     <p class="ms-3">Register yourself on website</p>
                 </div>
-                <div class="d-flex mt-4">
+                
+                <div style="border-left: 3px dotted black; height: 50px; margin-top: -5px; margin-left: 30px;"></div>
+                <div class="d-flex ">
                     <img src="./icons/booking.png" class="steps-icon">
                     <p class="ms-3">Book your ride</p>
                 </div>
-                <div class="d-flex mt-4">
+                <div style="border-left: 3px dotted black; height: 50px; margin-top: -5px; margin-left: 30px;"></div>
+                <div class="d-flex">
                     <img src="./icons/done.png" class="steps-icon">
                     <p class="ms-3">Enjoy the ride</p>
                 </div>

@@ -87,15 +87,22 @@ body{
 .section-content{
     display: flex;
     justify-content: space-around;
-    margin: 40px 200px;
-    font-size: 20px;
+    align-items: start;
+    margin: 40px 0px;
+    font-size: 18px;
+}
+.section-content-r{
+    margin-left: -400px;
 }
 .ph-img{
     height: 450px;
     margin-right: 300px;
 }
 .steps-icon{
-    height: 40px;
+    height: 60px;
+    background-color: black;
+    border-radius: 50%;
+    padding: 3px;
 }
 
 
