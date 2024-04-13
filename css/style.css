@@ -6,7 +6,7 @@ body{
     font-weight: weight;
     font-style: normal;
 }
-.logo{
+.car-logo{
     height: 80px;
 }
 .nav-text{
@@ -139,6 +139,7 @@ body{
     justify-content:space-between ;
     color: #e5e5e5;
     text-decoration: none;
+    margin-top: 20px;
 }
 .page-links{
     color: #e5e5e5;
