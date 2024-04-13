@@ -168,5 +168,8 @@ body{
     .ph-img{
         display: block;
     }
+    .section-content-r{
+        margin-top: 100%;
+    }
 }
   
