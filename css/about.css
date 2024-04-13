@@ -20,7 +20,9 @@ body{
     font-size:  larger;
     padding-top: 25px;
     color: black;
-
+}
+.about-container{
+    margin-top: 90px;
 }
 
 .playstore-img{
