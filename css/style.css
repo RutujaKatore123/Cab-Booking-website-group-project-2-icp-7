@@ -41,19 +41,22 @@ body{
     text-align: center;
 }
 .btn-car{
-    border: 1px solid #ffc107;
-    background-color: black;
-    color: #ffc107;
     border-radius: 20px;
-    padding: 5px;
-    width: 100px;
-    height: 40px;
+    padding: 10px;
+    width: 150px;
+    height: 45px;
     margin: 10px 50px;
-    margin-top: 50px;
+    margin-top: 30px;
+    border: none;
+    font-weight: 800;
+    color: #0b041b;
+    background: rgb(224, 241, 31);
+    cursor: pointer;
+    box-shadow: 0 0 10px 2px black;  
 }
 .btn-car:hover{
-    background-color: #ffc107;
-    color: white;
+    background-color: white;
+    color: black;
     transition: 0.5s;
 }
 .car-img{
@@ -104,7 +107,6 @@ body{
     border-radius: 50%;
     padding: 3px;
 }
-
 
 
 /*<!--footercode---->*/
