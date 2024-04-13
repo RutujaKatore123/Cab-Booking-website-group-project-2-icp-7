@@ -10,8 +10,10 @@ body * {
 }
 
 .main-login {
-    width: 100vw;
+    width: 99vw;
     height: 100vh;
+    padding: 15px;
+    padding-top:90px;
     background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(255, 209, 67, 1) 0%, rgba(255, 145, 83, 1) 90%);
     display: flex;
     justify-content: center;

@@ -20,7 +20,9 @@ body{
     font-size:  larger;
     padding-top: 25px;
     color: black;
-
+}
+.about-container{
+    margin-top: 90px;
 }
 
 .playstore-img{
@@ -134,9 +136,7 @@ body{
     align-items: center;
     justify-content: space-between
 }
-.logo{
-    
-}
+
 .soci-logo{
     height: 40px;
     padding-right: 20px;
@@ -149,6 +149,8 @@ body{
 .useful-links{
     display: flex;
     justify-content:space-between ;
+    color: #e5e5e5;
+    text-decoration: none;
 }
 .page-links{
     color: #e5e5e5;
@@ -160,9 +162,6 @@ body{
 }
 .right-footer{
     color: white;
-}
-.right-footer{
-    
 }
 .msg-heading{
     padding-top: 120px;
