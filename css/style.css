@@ -86,8 +86,8 @@ body{
 }
 .section-content{
     display: flex;
-    justify-content: center;
-    margin: 40px 0;
+    justify-content: space-around;
+    margin: 40px 200px;
     font-size: 20px;
 }
 .ph-img{
