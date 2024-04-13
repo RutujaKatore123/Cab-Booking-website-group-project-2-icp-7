@@ -155,3 +155,15 @@ body{
     padding-top: 120px;
     padding-bottom: 30px;
 }
+
+@media screen and (max-width:600px) {
+    .head{
+        display: block;
+        height: 1000px;
+    }
+    .taxi-img{
+        height: 200px;
+        margin-top: 20px;
+    }
+}
+  
