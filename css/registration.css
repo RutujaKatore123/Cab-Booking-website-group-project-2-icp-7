@@ -1,0 +1,73 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(./../images/cab.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+ }
+
+ .header {
+
+    color: #fa1739;
+    text-align: center;
+    padding: 0;
+ }
+
+ section {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: transparent;
+    backdrop-filter: blur(50px);
+ }
+
+ label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+ }
+
+ input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+ }
+ input{
+    border-radius: 10px;
+    background: rgb(240, 234, 221);
+ }
+
+ button {
+    background-color: #fa3917;
+    color: #f0ebeb;
+    padding: 0 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+ }
+ button:hover{
+    background-color: #f14527;
+ }
+ .java-scr{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    justify-content: space-evenly;
+    height: 30px;
+ }
+ #quantity{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 0px;
+ }
+ .submit button{
+    display: block ;
+    margin: 30px auto 0 auto;
+    padding: 10px 40px;
+ }
+ 

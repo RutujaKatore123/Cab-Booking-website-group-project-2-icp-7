@@ -5,6 +5,81 @@
     <title>registration</title>
 </head>
 <body>
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Book Now</title>
+   <link rel="stylesheet" href="../css/temples.css">
+   <link rel="stylesheet" href="./../css/registration.css">
+   <link rel="stylesheet" href="./../css/.css"
     
+      
+     
+   
+</head>
+
+<body>
+      
+
+   <section>
+   <div class="header">
+      <h1>Ragistration</h1>
+   </div>
+
+      <form id="bookingForm">
+         <label for="tourName">Tour Name:</label>
+         <input type="text" id="tourName" name="tourName" placeholder="Enter Tour Name Here..." required>
+
+         <label for="fullName">Your Full Name:</label>
+         <input type="text" id="fullName" name="fullName" placeholder="Write Your Name Here..." required>
+
+         <label for="email"> Address:</label>
+         <input type="email" id="email" name="email" placeholder="Write Your Email Here...">
+
+         <label for="tourDate">What is Tour Date:</label>
+         <input type="date" id="tourDate" name="tourDate" placeholder="Date" required>
+
+         <label for="email">Your Phone Number:</label>
+         <input type="number" id="number" name="number" placeholder="Write Your Number Here...">
+         <span style="font-weight: bold;">Number Of Ticket You Want To Book : </span>
+         
+         <div class="java-scr">
+            <button type="button" onclick="quantityIncrease()">Add Ticket</button>
+            <p class="quantity" id="quantity">0</p>
+            <button type="button" onclick="quantityDecrease()">Remove Ticket</button>
+         </div>
+
+         <div class="submit">
+            <button type="submit" class="btn" onclick="submitForm()">SUBMIT</button>
+         </div></br>
+      </form>
+   </section>
+
+
+   <script src="./book_now.js"></script>
+   <script src="../js/history-&-hill-stations.js"></script>
+   <script src="https://kit.fontawesome.com/4a24678c16.js" crossorigin="anonymous"></script>
+<script>
+
+function submitForm() {
+    alert('Booking successful!');
+}
+
+let quantity = document.getElementById("quantity");
+function quantityDecrease() {
+    alert('hello');
+    let quantityDec = parseInt(quantity.innerText);
+    quantity.innerText = --quantityDec;
+}
+function quantityIncrease() {
+    let quantityInc = parseInt(quantity.innerText);
+    quantity.innerText = ++quantityInc;
+}
+</script>
+</body>
+</html>
 </body>
 </html>
