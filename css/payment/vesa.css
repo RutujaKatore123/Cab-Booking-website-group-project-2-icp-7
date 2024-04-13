@@ -41,3 +41,72 @@ p input{
         display: none;
     }
 }
+
+
+/*<!--footercode---->*/
+.footer{
+    margin-top: 50px;
+    background-color: black;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding-bottom: 100px;
+
+}
+.main-footer{
+    align-items: center;
+    justify-content: space-between
+}
+
+.soci-logo{
+    height: 40px;
+    padding-right: 20px;
+}
+.mid-footer{
+    display: grid;
+    align-items: center;
+    padding-top: 80px;
+}
+.useful-links{
+    display: flex;
+    justify-content:space-between ;
+    color: #e5e5e5;
+    text-decoration: none;
+}
+.page-links{
+    color: #e5e5e5;
+    font-size: large;
+    text-align: center ;
+}
+.copy-right{
+    color: white;
+}
+.right-footer{
+    color: white;
+}
+.msg-heading{
+    padding-top: 120px;
+    padding-bottom: 30px;
+}
+
+/* nav bar code/ */
+
+.nav-text{
+    text-align: end;
+}
+
+.header-container{
+    justify-content: space-around;
+    
+}
+.navigation-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Change as needed */
+    padding: 10px 20px; /* Adjust padding as needed */
+    z-index: 1000; /* Ensures the navbar stays on top of other elements */
+}
